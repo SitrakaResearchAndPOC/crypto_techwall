@@ -175,6 +175,7 @@ cat clef1
 ```
 ls
 ```
+Other method : (if error , at least 4 character)
 ```
 openssl genrsa -des3 -out cleftest 512
 ```
