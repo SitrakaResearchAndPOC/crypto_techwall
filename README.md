@@ -289,7 +289,8 @@ eg
 (section) : technology  </br>
 [FQDN] : www.autorite.tn  </br>
 email : autorite@gmail.com  </br>
-
+</br>
+Avoid challange password
 ```
 cat certif.aut
 ```
@@ -317,8 +318,7 @@ eg
 (section) : tech  </br>
 [FQDN] : www.serveur.tn </br>
 email : serveur@gmail.com  </br>
-
-```
+</br>
 Avoid challange password
 ```
 cat serveur.key
