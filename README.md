@@ -219,7 +219,6 @@ openssl rsautl -decrypt -inkey clef1 -in test.enc
 ```
 openssl rsautl -encrypt -pubin -inkey clef1.pub -in clef1 -out test3
 ```
-```
 Signing and verifying
 ```
 openssl rsautl -sign -inkey clef1 -in test -out test.sign
