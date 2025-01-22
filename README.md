@@ -147,6 +147,7 @@ openssl passwd -6
 openssl passwd -6 -salt <random>
 ```
 * Video 4 : Chiffrement Asymétrique avec RSA
+GENERATING PRIVATE KEY
 ```
 openssl genrsa -out clef 4096
 ```
@@ -185,6 +186,7 @@ cat cleftest
 ```
 ls
 ```
+GENERATING PUBLIC KEY
 ```
 openssl rsa -in clef -pubout -out clef.pub
 ```
