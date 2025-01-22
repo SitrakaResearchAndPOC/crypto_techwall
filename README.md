@@ -1,4 +1,4 @@
-# Day5 : Cryptography; Data Corruption; haching; Authentication
+# Cryptography; Data Corruption; haching; Authentication
 ## Analyzing OpenSSL certificate
 
 * Video 1 : Introduction OpenSSL
