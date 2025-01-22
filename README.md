@@ -329,7 +329,6 @@ openssl x509 -in serveur.serv -text -noout
 ```
 make a pwd on terminal of autority certificate CA 
 ```
-```
 scp demande.serv kali@<IP of CA>:<path of CA>
 ```
 if connection refused restart, at the CA
