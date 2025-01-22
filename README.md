@@ -206,6 +206,7 @@ INTERPRETING RSA KEY
 ```
 openssl rsa -in clef -text  -noout
 ```
+WITH DEPECATED RSAUTL
 ```
 openssl rsautl -encrypt -pubin -inkey clef1.pub -in test -out test.enc
 ```
@@ -218,6 +219,7 @@ openssl rsautl -decrypt -inkey clef1 -in test.enc
 ```
 openssl rsautl -encrypt -pubin -inkey clef1.pub -in clef1 -out test3
 ```
+```
 Signing and verifying
 ```
 openssl rsautl -sign -inkey clef1 -in test -out test.sign
@@ -227,6 +229,29 @@ cat test.sign
 ```
 ```
 openssl rsautl -verify -pubin -inkey clef1.pub -in test.sign
+```
+WITHOUT DEPECATED RSAUTL, WITH PKEYUTL
+```
+openssl pkeyutl -encrypt -pubin -inkey clef1.pub -in test -out test.enc
+```
+```
+ls
+```
+```
+openssl  pkeyutl -decrypt -inkey clef1 -in test.enc
+```
+```
+openssl  pkeyutl -encrypt -pubin -inkey clef1.pub -in clef1 -out test3
+```
+Signing and verifying
+```
+openssl pkeyutl -sign -inkey clef1 -in test -out test.sign
+```
+```
+cat test.sign
+```
+```
+openssl pkeyutl -verify -pubin -inkey clef1.pub -in test.sign
 ```
 Scellement operation
 ```
